@@ -22,31 +22,46 @@ let minus4 = document.getElementById("minus4");
 let Q4 = document.getElementById("Q4").innerHTML;
 
 del.addEventListener("click", function () {
+  document.getElementById("final_total").innerHTML =
+    Number(document.getElementById("final_total").innerHTML) - prx * Q;
   document.getElementById("row").remove();
   document.getElementById("items_numb").innerHTML = items_numb - 1;
+
   items_numb--;
 });
 
 del1.addEventListener("click", function () {
+  document.getElementById("final_total").innerHTML =
+    Number(document.getElementById("final_total").innerHTML) - prx1 * Q1;
   document.getElementById("row1").remove();
   document.getElementById("items_numb").innerHTML = items_numb - 1;
+
   items_numb--;
 });
 
 del2.addEventListener("click", function () {
+  document.getElementById("final_total").innerHTML =
+    Number(document.getElementById("final_total").innerHTML) - prx2 * Q2;
   document.getElementById("row2").remove();
   document.getElementById("items_numb").innerHTML = items_numb - 1;
+
   items_numb--;
 });
 
 del3.addEventListener("click", function () {
   document.getElementById("row3").remove();
   document.getElementById("items_numb").innerHTML = items_numb - 1;
+  document.getElementById("final_total").innerHTML =
+    Number(document.getElementById("final_total").innerHTML) - prx3 * Q3;
+
   items_numb--;
 });
 del4.addEventListener("click", function () {
   document.getElementById("row4").remove();
   document.getElementById("items_numb").innerHTML = items_numb - 1;
+  document.getElementById("final_total").innerHTML =
+    Number(document.getElementById("final_total").innerHTML) - prx4 * Q4;
+
   items_numb--;
 });
 
