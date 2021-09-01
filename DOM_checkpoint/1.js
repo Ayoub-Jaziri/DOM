@@ -24,8 +24,10 @@ let Q4 = document.getElementById("Q4").innerHTML;
 del.addEventListener("click", function () {
   document.getElementById("final_total").innerHTML =
     Number(document.getElementById("final_total").innerHTML) - prx * Q;
+
   document.getElementById("row").remove();
   document.getElementById("items_numb").innerHTML = items_numb - 1;
+  Q = 0;
 
   items_numb--;
 });
@@ -35,7 +37,7 @@ del1.addEventListener("click", function () {
     Number(document.getElementById("final_total").innerHTML) - prx1 * Q1;
   document.getElementById("row1").remove();
   document.getElementById("items_numb").innerHTML = items_numb - 1;
-
+  Q1 = 0;
   items_numb--;
 });
 
@@ -44,7 +46,7 @@ del2.addEventListener("click", function () {
     Number(document.getElementById("final_total").innerHTML) - prx2 * Q2;
   document.getElementById("row2").remove();
   document.getElementById("items_numb").innerHTML = items_numb - 1;
-
+  Q2 = 0;
   items_numb--;
 });
 
@@ -53,7 +55,7 @@ del3.addEventListener("click", function () {
   document.getElementById("items_numb").innerHTML = items_numb - 1;
   document.getElementById("final_total").innerHTML =
     Number(document.getElementById("final_total").innerHTML) - prx3 * Q3;
-
+  Q3 = 0;
   items_numb--;
 });
 del4.addEventListener("click", function () {
@@ -61,7 +63,7 @@ del4.addEventListener("click", function () {
   document.getElementById("items_numb").innerHTML = items_numb - 1;
   document.getElementById("final_total").innerHTML =
     Number(document.getElementById("final_total").innerHTML) - prx4 * Q4;
-
+  Q4 = 0;
   items_numb--;
 });
 
@@ -79,13 +81,7 @@ minus.addEventListener("click", function () {
     document.getElementById("Q").innerHTML = Q;
     document.getElementById("tot").innerHTML = prx * Q;
     document.getElementById("final_total").innerHTML =
-      final_total +
-      prx * Q +
-      prx1 * Q1 +
-      prx2 * Q2 +
-      prx3 * Q3 +
-      prx4 * Q4 -
-      prx * Q;
+      final_total + prx * Q + prx1 * Q1 + prx2 * Q2 + prx3 * Q3 + prx4 * Q4;
   }
 });
 plus1.addEventListener("click", function () {
@@ -102,13 +98,7 @@ minus1.addEventListener("click", function () {
     document.getElementById("Q1").innerHTML = Q1;
     document.getElementById("tot1").innerHTML = prx1 * Q1;
     document.getElementById("final_total").innerHTML =
-      final_total +
-      prx * Q +
-      prx1 * Q1 +
-      prx2 * Q2 +
-      prx3 * Q3 +
-      prx4 * Q4 -
-      prx1 * Q1;
+      final_total + prx * Q + prx1 * Q1 + prx2 * Q2 + prx3 * Q3 + prx4 * Q4;
   }
 });
 plus2.addEventListener("click", function () {
@@ -124,13 +114,7 @@ minus2.addEventListener("click", function () {
     document.getElementById("Q2").innerHTML = Q2;
     document.getElementById("tot2").innerHTML = prx2 * Q2;
     document.getElementById("final_total").innerHTML =
-      final_total +
-      prx * Q +
-      prx1 * Q1 +
-      prx2 * Q2 +
-      prx3 * Q3 +
-      prx4 * Q4 -
-      prx2 * Q2;
+      final_total + prx * Q + prx1 * Q1 + prx2 * Q2 + prx3 * Q3 + prx4 * Q4;
   }
 });
 plus3.addEventListener("click", function () {
@@ -146,13 +130,7 @@ minus3.addEventListener("click", function () {
     document.getElementById("Q3").innerHTML = Q3;
     document.getElementById("tot3").innerHTML = prx3 * Q3;
     document.getElementById("final_total").innerHTML =
-      final_total +
-      prx * Q +
-      prx1 * Q1 +
-      prx2 * Q2 +
-      prx3 * Q3 +
-      prx4 * Q4 -
-      prx3 * Q3;
+      final_total + prx * Q + prx1 * Q1 + prx2 * Q2 + prx3 * Q3 + prx4 * Q4;
   }
 });
 plus4.addEventListener("click", function () {
@@ -169,12 +147,6 @@ minus4.addEventListener("click", function bas() {
     document.getElementById("Q4").innerHTML = Q4;
     document.getElementById("tot4").innerHTML = prx4 * Q4;
     document.getElementById("final_total").innerHTML =
-      final_total +
-      prx * Q +
-      prx1 * Q1 +
-      prx2 * Q2 +
-      prx3 * Q3 +
-      prx4 * Q4 -
-      prx4 * Q4;
+      final_total + prx * Q + prx1 * Q1 + prx2 * Q2 + prx3 * Q3 + prx4 * Q4;
   }
 });

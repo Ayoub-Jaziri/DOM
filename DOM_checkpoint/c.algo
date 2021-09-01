@@ -1,0 +1,48 @@
+ALGORITHM linkedlist
+VAR
+    list1:STRING;
+    list2:STRING;
+    list:STRING;
+    list3:STRING;
+    list3="";
+BEGIN
+   list=list1+list2
+   FOR i FROM 3 TO list.length STEP 4  DO
+       FOR j FROM 3 TO list.length STEP 4  DO
+           IF (list[i]>list[j]) THEN
+               min:=list[j]
+           END_IF
+       END_FOR
+       list3:=min+list3
+   END_FOR
+END
+
+
+
+ALGORITHM interval
+    intervale:STRING;
+    
+BEGIN
+   
+   FOR i FROM 2 TO list.length-1 STEP 6  DO
+   FOR j FROM 6 TO list.length-1 STEP   DO
+       set_instructions
+   END_FOR
+      IF (conditon) THEN
+          set_instructions
+      END_IF
+   END_FOR
+END
+
+
+
+ALGORITHM algorithm_name
+VAR
+    k=INTEGER;
+BEGIN
+    IF (ch[i]=ch[j+1]) THEN
+        ph:=ch[i]+ph
+        d:=d+1
+        
+    END_IF
+END
